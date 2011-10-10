@@ -329,6 +329,7 @@
     }
 //    NSLog(@"%@",array);
     [array writeToFile:path atomically:YES];
+    [array release];
     
 }
 
