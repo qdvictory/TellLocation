@@ -1,46 +1,11 @@
-1.WBShareKey.h中修改配置信息
+对于初步接触mapview编程的朋友比较有帮助。
 
-2.app delegate中添加
+主要知识点：
+    1.mapview的简单使用。
+    2.google api的相关调用。
+    3.mapview大头钉的操作，长按插入大头钉等。
 
-    - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-    {
-        [[WBShareKit mainShare] handleOpenURL:url];   
-        return YES;
-    }
-    
-    - (void)sinaSuccess:(NSData *)_data
-    {
-        NSLog(@"sina ok:%@",_data);
-    }
-
-    - (void)sinaError:(NSError *)_error
-    {
-        NSLog(@"sina error:%@",_error);
-    }
-    
-    //[[WBShareKit mainShare] startSinaOauthWithSelector:@selector(sinaSuccess:) withFailedSelector:@selector(sinaError:)];
-    //如上认证代码添加的@selector也将会在此调用
-    
-3.在info.plist中修改url types
-
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <array>
-    	<dict>
-    		<key>CFBundleTypeRole</key>
-    		<string>Editor</string>
-    		<key>CFBundleURLName</key>
-    		<string>minroad.com</string>
-    		<key>CFBundleURLSchemes</key>
-    		<array>
-    			<string>oauth</string>
-    		</array>
-    	</dict>
-    </array>
-    </plist>
-
-4.具体调用请查看WBShareKitViewController.m
+此版本已经在App Store上线，链接地址http://itunes.apple.com/cn/app/telllocation/id467293790?l=en&mt=8
 
 更多信息
 
