@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  sendLoc
+
+  Created by Gao Semaus on 11-9-21.
+  Copyright 2011年 Chlova. All rights reserved.
+*/
+
+"Loading..." = "Loading...";
+"Via SMS" = "Via SMS";
+"Via Email" = "Via Email";
+"Copy" = "Copy";
+"Cancel" = "Cancel";
+"Copy Done" = "Copy Done";
+"OK" = "OK";
+"The device can't send SMS now. Please check your system settings" = "The device can't send SMS now. Please check your system settings.";
+"The device can't send Email now. Please check your system settings." = "The device can't send Email now. Please check your system settings.";
+"Delete" = "Delete";
+"Via Google Map" = "Via Google Map";
+"Warning!" = "Warning!";
+"All annotations will be deleted, continue?" = "All annotations will be deleted, continue?";
+"NO" = "NO";
+"YES" = "YES";

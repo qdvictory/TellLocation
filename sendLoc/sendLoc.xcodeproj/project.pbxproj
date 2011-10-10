@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		656BBF0C142AE128006251A1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF0A142AE128006251A1 /* delete.png */; };
+		656BBF0D142AE128006251A1 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF0B142AE128006251A1 /* delete@2x.png */; };
+		656BBF11142AE5C3006251A1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF0F142AE5C3006251A1 /* icon.png */; };
+		656BBF12142AE5C3006251A1 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF10142AE5C3006251A1 /* icon@2x.png */; };
+		656BBF15142AEA29006251A1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF13142AEA29006251A1 /* Default.png */; };
+		656BBF16142AEA29006251A1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656BBF14142AEA29006251A1 /* Default@2x.png */; };
+		659EADB014287626004D4901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADAF14287626004D4901 /* UIKit.framework */; };
+		659EADB214287626004D4901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADB114287626004D4901 /* Foundation.framework */; };
+		659EADB414287626004D4901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADB314287626004D4901 /* CoreGraphics.framework */; };
+		659EADBA14287626004D4901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659EADB814287626004D4901 /* InfoPlist.strings */; };
+		659EADBC14287626004D4901 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EADBB14287626004D4901 /* main.m */; };
+		659EADC014287627004D4901 /* sendLocAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EADBF14287627004D4901 /* sendLocAppDelegate.m */; };
+		659EADC314287627004D4901 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659EADC114287627004D4901 /* MainWindow.xib */; };
+		659EADC614287627004D4901 /* sendLocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EADC514287627004D4901 /* sendLocViewController.m */; };
+		659EADC914287627004D4901 /* sendLocViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659EADC714287627004D4901 /* sendLocViewController.xib */; };
+		659EADD114287627004D4901 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADD014287627004D4901 /* SenTestingKit.framework */; };
+		659EADD214287627004D4901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADAF14287626004D4901 /* UIKit.framework */; };
+		659EADD314287627004D4901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADB114287626004D4901 /* Foundation.framework */; };
+		659EADD414287627004D4901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADB314287626004D4901 /* CoreGraphics.framework */; };
+		659EADDC14287627004D4901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659EADDA14287627004D4901 /* InfoPlist.strings */; };
+		659EADDE14287627004D4901 /* sendLocTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 659EADDD14287627004D4901 /* sendLocTests.h */; };
+		659EADE014287627004D4901 /* sendLocTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EADDF14287627004D4901 /* sendLocTests.m */; };
+		659EADEA1428763F004D4901 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EADE91428763F004D4901 /* MapKit.framework */; };
+		659EADED14287AC4004D4901 /* MapViewOverly.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EADEC14287AC4004D4901 /* MapViewOverly.m */; };
+		65AA8679142A30200006D07E /* SLMkMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA8678142A30200006D07E /* SLMkMapView.m */; };
+		65D7C699142885810054A3E4 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D7C698142885810054A3E4 /* Annotation.m */; };
+		65D7C6AB1428CB3F0054A3E4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D7C6AA1428CB3F0054A3E4 /* MessageUI.framework */; };
+		65F983C1142997900099AE1E /* GAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983C0142997900099AE1E /* GAPI.m */; };
+		65F983E814299D1D0099AE1E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983DD14299D1D0099AE1E /* NSObject+SBJSON.m */; };
+		65F983E914299D1D0099AE1E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983DF14299D1D0099AE1E /* NSString+SBJSON.m */; };
+		65F983EA14299D1D0099AE1E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983E114299D1D0099AE1E /* SBJSON.m */; };
+		65F983EB14299D1D0099AE1E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983E314299D1D0099AE1E /* SBJsonBase.m */; };
+		65F983EC14299D1D0099AE1E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983E514299D1D0099AE1E /* SBJsonParser.m */; };
+		65F983ED14299D1D0099AE1E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983E714299D1D0099AE1E /* SBJsonWriter.m */; };
+		65F983F11429A6DB0099AE1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F983F31429A6DB0099AE1E /* Localizable.strings */; };
+		65F983F91429B6FB0099AE1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F983F81429B6FB0099AE1E /* CoreLocation.framework */; };
+		65F983FC1429B9620099AE1E /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F983FB1429B9610099AE1E /* NSString+URLEncoding.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		659EADD514287627004D4901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659EADA214287625004D4901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659EADAA14287626004D4901;
+			remoteInfo = sendLoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		656BBF0A142AE128006251A1 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		656BBF0B142AE128006251A1 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		656BBF0F142AE5C3006251A1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		656BBF10142AE5C3006251A1 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		656BBF13142AEA29006251A1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		656BBF14142AEA29006251A1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		659EADAB14287626004D4901 /* sendLoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sendLoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		659EADAF14287626004D4901 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		659EADB114287626004D4901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		659EADB314287626004D4901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		659EADB714287626004D4901 /* sendLoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sendLoc-Info.plist"; sourceTree = "<group>"; };
+		659EADB914287626004D4901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		659EADBB14287626004D4901 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		659EADBD14287627004D4901 /* sendLoc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sendLoc-Prefix.pch"; sourceTree = "<group>"; };
+		659EADBE14287627004D4901 /* sendLocAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sendLocAppDelegate.h; sourceTree = "<group>"; };
+		659EADBF14287627004D4901 /* sendLocAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sendLocAppDelegate.m; sourceTree = "<group>"; };
+		659EADC214287627004D4901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		659EADC414287627004D4901 /* sendLocViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sendLocViewController.h; sourceTree = "<group>"; };
+		659EADC514287627004D4901 /* sendLocViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sendLocViewController.m; sourceTree = "<group>"; };
+		659EADC814287627004D4901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/sendLocViewController.xib; sourceTree = "<group>"; };
+		659EADCF14287627004D4901 /* sendLocTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sendLocTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659EADD014287627004D4901 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		659EADD914287627004D4901 /* sendLocTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sendLocTests-Info.plist"; sourceTree = "<group>"; };
+		659EADDB14287627004D4901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		659EADDD14287627004D4901 /* sendLocTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sendLocTests.h; sourceTree = "<group>"; };
+		659EADDF14287627004D4901 /* sendLocTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sendLocTests.m; sourceTree = "<group>"; };
+		659EADE91428763F004D4901 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		659EADEB14287AC4004D4901 /* MapViewOverly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewOverly.h; sourceTree = "<group>"; };
+		659EADEC14287AC4004D4901 /* MapViewOverly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewOverly.m; sourceTree = "<group>"; };
+		65AA8677142A30200006D07E /* SLMkMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMkMapView.h; sourceTree = "<group>"; };
+		65AA8678142A30200006D07E /* SLMkMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMkMapView.m; sourceTree = "<group>"; };
+		65AA867B142A36010006D07E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		65D7C697142885810054A3E4 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		65D7C698142885810054A3E4 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		65D7C6AA1428CB3F0054A3E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		65F983BF142997900099AE1E /* GAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAPI.h; sourceTree = "<group>"; };
+		65F983C0142997900099AE1E /* GAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAPI.m; sourceTree = "<group>"; };
+		65F983DB14299D1D0099AE1E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		65F983DC14299D1D0099AE1E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		65F983DD14299D1D0099AE1E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		65F983DE14299D1D0099AE1E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		65F983DF14299D1D0099AE1E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		65F983E014299D1D0099AE1E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		65F983E114299D1D0099AE1E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		65F983E214299D1D0099AE1E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		65F983E314299D1D0099AE1E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		65F983E414299D1D0099AE1E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		65F983E514299D1D0099AE1E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		65F983E614299D1D0099AE1E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		65F983E714299D1D0099AE1E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		65F983EE1429A23A0099AE1E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		65F983F21429A6DB0099AE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65F983F81429B6FB0099AE1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		65F983FA1429B9610099AE1E /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		65F983FB1429B9610099AE1E /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659EADA814287626004D4901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F983F91429B6FB0099AE1E /* CoreLocation.framework in Frameworks */,
+				65D7C6AB1428CB3F0054A3E4 /* MessageUI.framework in Frameworks */,
+				659EADEA1428763F004D4901 /* MapKit.framework in Frameworks */,
+				659EADB014287626004D4901 /* UIKit.framework in Frameworks */,
+				659EADB214287626004D4901 /* Foundation.framework in Frameworks */,
+				659EADB414287626004D4901 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659EADCB14287627004D4901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659EADD114287627004D4901 /* SenTestingKit.framework in Frameworks */,
+				659EADD214287627004D4901 /* UIKit.framework in Frameworks */,
+				659EADD314287627004D4901 /* Foundation.framework in Frameworks */,
+				659EADD414287627004D4901 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		659EADA014287625004D4901 = {
+			isa = PBXGroup;
+			children = (
+				656BBF0F142AE5C3006251A1 /* icon.png */,
+				656BBF13142AEA29006251A1 /* Default.png */,
+				656BBF14142AEA29006251A1 /* Default@2x.png */,
+				656BBF10142AE5C3006251A1 /* icon@2x.png */,
+				656BBF0A142AE128006251A1 /* delete.png */,
+				656BBF0B142AE128006251A1 /* delete@2x.png */,
+				65AA8677142A30200006D07E /* SLMkMapView.h */,
+				65AA8678142A30200006D07E /* SLMkMapView.m */,
+				65F983FA1429B9610099AE1E /* NSString+URLEncoding.h */,
+				65F983FB1429B9610099AE1E /* NSString+URLEncoding.m */,
+				65F983F81429B6FB0099AE1E /* CoreLocation.framework */,
+				65F983DA14299D1D0099AE1E /* JSON */,
+				65F983BF142997900099AE1E /* GAPI.h */,
+				65F983C0142997900099AE1E /* GAPI.m */,
+				65D7C6AA1428CB3F0054A3E4 /* MessageUI.framework */,
+				659EADE91428763F004D4901 /* MapKit.framework */,
+				659EADB514287626004D4901 /* sendLoc */,
+				659EADD714287627004D4901 /* sendLocTests */,
+				659EADAE14287626004D4901 /* Frameworks */,
+				659EADAC14287626004D4901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		659EADAC14287626004D4901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659EADAB14287626004D4901 /* sendLoc.app */,
+				659EADCF14287627004D4901 /* sendLocTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659EADAE14287626004D4901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659EADAF14287626004D4901 /* UIKit.framework */,
+				659EADB114287626004D4901 /* Foundation.framework */,
+				659EADB314287626004D4901 /* CoreGraphics.framework */,
+				659EADD014287627004D4901 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		659EADB514287626004D4901 /* sendLoc */ = {
+			isa = PBXGroup;
+			children = (
+				659EADBE14287627004D4901 /* sendLocAppDelegate.h */,
+				659EADBF14287627004D4901 /* sendLocAppDelegate.m */,
+				659EADC114287627004D4901 /* MainWindow.xib */,
+				659EADC414287627004D4901 /* sendLocViewController.h */,
+				659EADC514287627004D4901 /* sendLocViewController.m */,
+				659EADC714287627004D4901 /* sendLocViewController.xib */,
+				659EADB614287626004D4901 /* Supporting Files */,
+				659EADEB14287AC4004D4901 /* MapViewOverly.h */,
+				659EADEC14287AC4004D4901 /* MapViewOverly.m */,
+				65D7C697142885810054A3E4 /* Annotation.h */,
+				65D7C698142885810054A3E4 /* Annotation.m */,
+			);
+			path = sendLoc;
+			sourceTree = "<group>";
+		};
+		659EADB614287626004D4901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				659EADB714287626004D4901 /* sendLoc-Info.plist */,
+				659EADB814287626004D4901 /* InfoPlist.strings */,
+				659EADBB14287626004D4901 /* main.m */,
+				659EADBD14287627004D4901 /* sendLoc-Prefix.pch */,
+				65F983F31429A6DB0099AE1E /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		659EADD714287627004D4901 /* sendLocTests */ = {
+			isa = PBXGroup;
+			children = (
+				659EADDD14287627004D4901 /* sendLocTests.h */,
+				659EADDF14287627004D4901 /* sendLocTests.m */,
+				659EADD814287627004D4901 /* Supporting Files */,
+			);
+			path = sendLocTests;
+			sourceTree = "<group>";
+		};
+		659EADD814287627004D4901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				659EADD914287627004D4901 /* sendLocTests-Info.plist */,
+				659EADDA14287627004D4901 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65F983DA14299D1D0099AE1E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				65F983DB14299D1D0099AE1E /* JSON.h */,
+				65F983DC14299D1D0099AE1E /* NSObject+SBJSON.h */,
+				65F983DD14299D1D0099AE1E /* NSObject+SBJSON.m */,
+				65F983DE14299D1D0099AE1E /* NSString+SBJSON.h */,
+				65F983DF14299D1D0099AE1E /* NSString+SBJSON.m */,
+				65F983E014299D1D0099AE1E /* SBJSON.h */,
+				65F983E114299D1D0099AE1E /* SBJSON.m */,
+				65F983E214299D1D0099AE1E /* SBJsonBase.h */,
+				65F983E314299D1D0099AE1E /* SBJsonBase.m */,
+				65F983E414299D1D0099AE1E /* SBJsonParser.h */,
+				65F983E514299D1D0099AE1E /* SBJsonParser.m */,
+				65F983E614299D1D0099AE1E /* SBJsonWriter.h */,
+				65F983E714299D1D0099AE1E /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659EADAA14287626004D4901 /* sendLoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659EADE314287627004D4901 /* Build configuration list for PBXNativeTarget "sendLoc" */;
+			buildPhases = (
+				659EADA714287626004D4901 /* Sources */,
+				659EADA814287626004D4901 /* Frameworks */,
+				659EADA914287626004D4901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sendLoc;
+			productName = sendLoc;
+			productReference = 659EADAB14287626004D4901 /* sendLoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		659EADCE14287627004D4901 /* sendLocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659EADE614287627004D4901 /* Build configuration list for PBXNativeTarget "sendLocTests" */;
+			buildPhases = (
+				659EADCA14287627004D4901 /* Sources */,
+				659EADCB14287627004D4901 /* Frameworks */,
+				659EADCC14287627004D4901 /* Resources */,
+				659EADCD14287627004D4901 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659EADD614287627004D4901 /* PBXTargetDependency */,
+			);
+			name = sendLocTests;
+			productName = sendLocTests;
+			productReference = 659EADCF14287627004D4901 /* sendLocTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659EADA214287625004D4901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Chlova;
+			};
+			buildConfigurationList = 659EADA514287625004D4901 /* Build configuration list for PBXProject "sendLoc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hant",
+				zh,
+				"zh-Hans",
+				"zh-Hans-CN",
+				"zh-Hans-SG",
+			);
+			mainGroup = 659EADA014287625004D4901;
+			productRefGroup = 659EADAC14287626004D4901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659EADAA14287626004D4901 /* sendLoc */,
+				659EADCE14287627004D4901 /* sendLocTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659EADA914287626004D4901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659EADBA14287626004D4901 /* InfoPlist.strings in Resources */,
+				659EADC314287627004D4901 /* MainWindow.xib in Resources */,
+				659EADC914287627004D4901 /* sendLocViewController.xib in Resources */,
+				65F983F11429A6DB0099AE1E /* Localizable.strings in Resources */,
+				656BBF0C142AE128006251A1 /* delete.png in Resources */,
+				656BBF0D142AE128006251A1 /* delete@2x.png in Resources */,
+				656BBF11142AE5C3006251A1 /* icon.png in Resources */,
+				656BBF12142AE5C3006251A1 /* icon@2x.png in Resources */,
+				656BBF15142AEA29006251A1 /* Default.png in Resources */,
+				656BBF16142AEA29006251A1 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659EADCC14287627004D4901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659EADDC14287627004D4901 /* InfoPlist.strings in Resources */,
+				659EADDE14287627004D4901 /* sendLocTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		659EADCD14287627004D4901 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659EADA714287626004D4901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659EADBC14287626004D4901 /* main.m in Sources */,
+				659EADC014287627004D4901 /* sendLocAppDelegate.m in Sources */,
+				659EADC614287627004D4901 /* sendLocViewController.m in Sources */,
+				659EADED14287AC4004D4901 /* MapViewOverly.m in Sources */,
+				65D7C699142885810054A3E4 /* Annotation.m in Sources */,
+				65F983C1142997900099AE1E /* GAPI.m in Sources */,
+				65F983E814299D1D0099AE1E /* NSObject+SBJSON.m in Sources */,
+				65F983E914299D1D0099AE1E /* NSString+SBJSON.m in Sources */,
+				65F983EA14299D1D0099AE1E /* SBJSON.m in Sources */,
+				65F983EB14299D1D0099AE1E /* SBJsonBase.m in Sources */,
+				65F983EC14299D1D0099AE1E /* SBJsonParser.m in Sources */,
+				65F983ED14299D1D0099AE1E /* SBJsonWriter.m in Sources */,
+				65F983FC1429B9620099AE1E /* NSString+URLEncoding.m in Sources */,
+				65AA8679142A30200006D07E /* SLMkMapView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659EADCA14287627004D4901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659EADE014287627004D4901 /* sendLocTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659EADD614287627004D4901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659EADAA14287626004D4901 /* sendLoc */;
+			targetProxy = 659EADD514287627004D4901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659EADB814287626004D4901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659EADB914287626004D4901 /* en */,
+				65F983EE1429A23A0099AE1E /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		659EADC114287627004D4901 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659EADC214287627004D4901 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		659EADC714287627004D4901 /* sendLocViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659EADC814287627004D4901 /* en */,
+			);
+			name = sendLocViewController.xib;
+			sourceTree = "<group>";
+		};
+		659EADDA14287627004D4901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659EADDB14287627004D4901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65F983F31429A6DB0099AE1E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F983F21429A6DB0099AE1E /* en */,
+				65AA867B142A36010006D07E /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		656BBF17142AEE9F006251A1 /* fabu */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = fabu;
+		};
+		656BBF18142AEE9F006251A1 /* fabu */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLoc/sendLoc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = fabu;
+		};
+		656BBF19142AEE9F006251A1 /* fabu */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sendLoc.app/sendLoc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLocTests/sendLocTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = fabu;
+		};
+		659EADE114287627004D4901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		659EADE214287627004D4901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659EADE414287627004D4901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLoc/sendLoc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		659EADE514287627004D4901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLoc/sendLoc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		659EADE714287627004D4901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sendLoc.app/sendLoc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLocTests/sendLocTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		659EADE814287627004D4901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sendLoc.app/sendLoc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sendLoc/sendLoc-Prefix.pch";
+				INFOPLIST_FILE = "sendLocTests/sendLocTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659EADA514287625004D4901 /* Build configuration list for PBXProject "sendLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659EADE114287627004D4901 /* Debug */,
+				659EADE214287627004D4901 /* Release */,
+				656BBF17142AEE9F006251A1 /* fabu */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659EADE314287627004D4901 /* Build configuration list for PBXNativeTarget "sendLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659EADE414287627004D4901 /* Debug */,
+				659EADE514287627004D4901 /* Release */,
+				656BBF18142AEE9F006251A1 /* fabu */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659EADE614287627004D4901 /* Build configuration list for PBXNativeTarget "sendLocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659EADE714287627004D4901 /* Debug */,
+				659EADE814287627004D4901 /* Release */,
+				656BBF19142AEE9F006251A1 /* fabu */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659EADA214287625004D4901 /* Project object */;
+}

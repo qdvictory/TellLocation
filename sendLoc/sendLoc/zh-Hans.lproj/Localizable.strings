@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  sendLoc
+
+  Created by Gao Semaus on 11-9-21.
+  Copyright 2011年 Chlova. All rights reserved.
+*/
+
+"Loading..." = "正在加载...";
+"Via SMS" = "通过短信";
+"Via Email" = "通过电子邮件";
+"Copy" = "复制";
+"Cancel" = "取消";
+"Copy Done" = "复制成功";
+"OK" = "确定";
+"The device can't send SMS now. Please check your system settings." = "当前短信服务不可用，请检查系统设置";
+"The device can't send Email now. Please check your system settings." = "当前电子邮件服务不可用，请检查系统设置";
+"Delete" = "删除";
+"Via Google Map" = "通过Google Map";
+"Warning!" = "警告！";
+"All annotations will be deleted, continue?" = "此操作将会清空所有的地图标记，确定要继续么？";
+"NO" = "取消";
+"YES" = "确定";
